@@ -648,11 +648,14 @@ footer {
   font-size: 0.95rem;
   color: var(--text-secondary);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .case-back:hover {
   color: var(--accent-gold);
   transform: translateX(-4px);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .case-tag {
