@@ -549,6 +549,32 @@ section {
   color: var(--text-dim);
 }
 
+.form-submit {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border: 2px solid var(--accent-gold);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  font-family: var(--font-sans);
+  align-self: flex-start;
+}
+
+.form-submit:hover {
+  background: transparent;
+  color: var(--accent-light);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+  transform: translateY(-2px);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: var(--bg-secondary);
