@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIMEBLOCK — Alek</title>
+  <meta name="description" content="A personal productivity app combining Pomodoro, task prioritization, and tagging — built because nothing else worked the way my brain does.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Alek<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Case Study Hero -->
+  <div class="case-hero">
+    <div class="case-hero-inner">
+      <a href="index.html" class="case-back">← Back to work</a>
+      <span class="case-tag">Productivity App · UX Design · Built & Used Daily</span>
+      <h1 class="case-title">TIME<em>BLOCK</em></h1>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <span class="case-meta-label">Type</span>
+          <span class="case-meta-value">Personal project</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Stack</span>
+          <span class="case-meta-value">HTML · CSS · JS · Supabase</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Role</span>
+          <span class="case-meta-value">Design & Development</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Status</span>
+          <span class="case-meta-value">In daily use</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case Study Body -->
+  <div class="case-body">
+    <nav class="case-nav">
+      <a href="#what" class="case-nav-item active">What it is</a>
+      <a href="#problem" class="case-nav-item">The problem</a>
+      <a href="#built" class="case-nav-item">What I built</a>
+      <a href="#approach" class="case-nav-item">Approach</a>
+      <a href="#demonstrates" class="case-nav-item">Takeaway</a>
+      <a href="#differently" class="case-nav-item">What I'd change</a>
+    </nav>
+
+    <div class="case-content">
+
+      <div class="case-section" id="what">
+        <span class="case-section-label">Overview</span>
+        <h2>What it is</h2>
+        <p>TIMEBLOCK is a personal productivity app that combines a Pomodoro timer, task prioritization, and a tag system into one minimal interface — synced across devices via Supabase. I built it because nothing else worked the way my brain does. I still use it every day.</p>
+        <img src="timeblock-1.png" alt="TIMEBLOCK — Main interface" 
+  style="width:100%; border: 1px solid var(--border); display:block; margin: 32px 0;">
+      </div>
+
+      <div class="case-section" id="problem">
+        <span class="case-section-label">Origin</span>
+        <h2>The problem</h2>
+        <p>Productivity tools tend to solve one problem well and ignore the rest. Pomodoro apps don't connect to your task list. Task managers don't help you focus. Tag systems exist in isolation.</p>
+        <p>The result is a pile of apps that each do something useful but don't talk to each other — and the fragmentation itself becomes the thing getting in the way of getting things done. I wanted one tool that held it all together without making me think about the tool.</p>
+      </div>
+
+      <div class="case-section" id="built">
+        <span class="case-section-label">Solution</span>
+        <h2>What I built</h2>
+        <p>TIMEBLOCK keeps it simple by design: a <strong>Pomodoro timer attached to an actual task list</strong>, with priority levels and tags so you always know what to work on next and why.</p>
+        <p>Supabase handles sync so your tasks and progress follow you across devices without any manual export or copy-paste. The UI is deliberately minimal — the goal was to make the tool invisible, something you open, use, and close without friction.</p>
+        <img src="timeblock-2.png" alt="TIMEBLOCK — Task list and timer view" 
+  style="width:100%; border: 1px solid var(--border); display:block; margin: 32px 0;">
+      </div>
+
+      <div class="case-section" id="approach">
+        <span class="case-section-label">Process</span>
+        <h2>How I approached it</h2>
+        <p>I built TIMEBLOCK in plain HTML, CSS, and JavaScript — a deliberate choice. No framework overhead, no build pipeline to wrestle with, just fast and direct.</p>
+        <p>The design decisions came from using the tool myself: every feature that made it in solved a frustration I'd actually experienced, and everything that didn't make the cut was something that sounded useful but added noise. <strong>Building for yourself is a useful filter</strong> — you can't hide from bad UX when you're the one living with it.</p>
+      </div>
+
+      <div class="case-section" id="demonstrates">
+        <span class="case-section-label">Takeaway</span>
+        <h2>What this project demonstrates</h2>
+        <p>TIMEBLOCK shows how I think about design when the user is someone I know well — me. The same instincts apply when I'm working with a client: <strong>start with the real friction, build only what solves it</strong>, and make the result feel effortless to use. A tool nobody has to think about is a tool that actually gets used.</p>
+      </div>
+
+      <div class="case-section" id="differently">
+        <span class="case-section-label">Reflection</span>
+        <h2>What I'd do differently</h2>
+        <p>TIMEBLOCK started as a solo tool and still feels like one. If I were building it again with a wider audience in mind, I'd add <strong>light onboarding</strong> — a way to help someone new understand the Pomodoro + priority + tag system without having to figure it out themselves. The logic is intuitive once you're in it, but the first five minutes could be smoother.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-copy">© 2026 Alek. Built by hand.</p>
+    <div class="footer-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+
+    (function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    })();
+
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const sections = document.querySelectorAll('.case-section');
+    const navItems = document.querySelectorAll('.case-nav-item');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 160) current = s.id;
+      });
+      navItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+</body>
+</html>
