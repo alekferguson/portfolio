@@ -12,11 +12,16 @@
   <!-- Nav -->
   <nav id="nav">
     <a href="index.html" class="nav-logo">Alek<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#work">Work</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
   <!-- Hero -->
@@ -195,6 +200,22 @@
         btn.style.background = '';
       }, 3000);
     }
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
   </script>
 </body>
 </html>

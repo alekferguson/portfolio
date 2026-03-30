@@ -11,11 +11,16 @@
 
   <nav id="nav">
     <a href="index.html" class="nav-logo">Alek<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html#work">Work</a></li>
       <li><a href="index.html#services">Services</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
   <!-- Case Study Hero -->
@@ -113,6 +118,20 @@
   </footer>
 
   <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
