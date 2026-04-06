@@ -294,7 +294,7 @@ nav.scrolled {
 }
 
 /* ===== SECTIONS ===== */
-section, #work, #services, #contact {
+section, #work, #services, #contact, .case-section {
   scroll-margin-top: 110px;
 }
 
