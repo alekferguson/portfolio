@@ -879,6 +879,10 @@ footer {
     font-size: 3.5rem;
   }
 
+  #hero {
+    padding-bottom: 90px;
+  }
+
   nav {
     padding: var(--spacing-md);
     flex-direction: row;
