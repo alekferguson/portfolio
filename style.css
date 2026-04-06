@@ -979,7 +979,12 @@ footer {
   }
 
   .case-section-label {
+    grid-row: auto;
     margin-bottom: var(--spacing-md);
+  }
+
+  .case-section h2 {
+    grid-row: auto;
   }
 
   .case-section > *:not(.case-section-label) {
